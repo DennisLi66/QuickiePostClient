@@ -65,8 +65,6 @@ function App() {
   //Variables
   // const serverLocation = "http://localhost:3001";
   const serverLocation = process.env.REACT_APP_SERVERLOCATION;
-  console.log(process.env.REACT_APP_SERVERLOCATION)
-  // console.log(process.env);
   const cookies = React.useMemo(() => {return new Cookies()},[])
   const [mainCode,changeCode] = React.useState(
     <div>
